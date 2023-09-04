@@ -124,7 +124,7 @@ export const DELETE = async (request) => {
   if (foundDupe === -1) {
     return NextResponse.json(
       { ok: false, message: "Student Id does not exist" },
-      { status: 400 }
+      { status: 404 }
     );
   }
 
